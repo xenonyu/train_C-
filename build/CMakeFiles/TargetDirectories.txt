@@ -1,0 +1,6 @@
+/Users/xym/work/sense/c++/build/CMakeFiles/rebuild_cache.dir
+/Users/xym/work/sense/c++/build/CMakeFiles/edit_cache.dir
+/Users/xym/work/sense/c++/build/CMakeFiles/Demo.dir
+/Users/xym/work/sense/c++/build/src/CMakeFiles/rebuild_cache.dir
+/Users/xym/work/sense/c++/build/src/CMakeFiles/edit_cache.dir
+/Users/xym/work/sense/c++/build/src/CMakeFiles/MathFunctions.dir

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xym/work/sense/c++/main.cpp
+iostream
+-
+vector
+-
+string
+-
+src/log.h
+/Users/xym/work/sense/c++/src/log.h
+src/add.cpp
+/Users/xym/work/sense/c++/src/add.cpp
+
+/Users/xym/work/sense/c++/src/add.cpp
+iostream
+-
+
+/Users/xym/work/sense/c++/src/log.h
+
