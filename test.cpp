@@ -1,15 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Log.h"
+#include "add.h"
 
 using namespace std;
-void Log(const char *message);
-
-template <typename T>
-T sum(T a, T b)
-{
-    return a + b;
-}
 
 int main()
 {

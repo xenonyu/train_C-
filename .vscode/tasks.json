@@ -54,6 +54,16 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label":"make",
+            "type":"shell",
+            "command": "cmake",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
