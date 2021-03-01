@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/Users/xym/work/sense/c++/build",
-  "command": "/usr/bin/clang++    -g -Wall -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/Demo.dir/main.cpp.o -c /Users/xym/work/sense/c++/main.cpp",
-  "file": "/Users/xym/work/sense/c++/main.cpp"
+  "directory": "/Users/xym/work/sense/c++/test/build",
+  "command": "/usr/bin/clang++    -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/Demo.dir/main.cpp.o -c /Users/xym/work/sense/c++/test/main.cpp",
+  "file": "/Users/xym/work/sense/c++/test/main.cpp"
 },
 {
-  "directory": "/Users/xym/work/sense/c++/build/src",
-  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/MathFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/src/add.cpp",
-  "file": "/Users/xym/work/sense/c++/src/add.cpp"
+  "directory": "/Users/xym/work/sense/c++/test/build/src",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/SrcFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/test/src/add.cpp",
+  "file": "/Users/xym/work/sense/c++/test/src/add.cpp"
 },
 {
-  "directory": "/Users/xym/work/sense/c++/build/src",
-  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/MathFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/src/log.cpp",
-  "file": "/Users/xym/work/sense/c++/src/log.cpp"
+  "directory": "/Users/xym/work/sense/c++/test/build/src",
+  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -o CMakeFiles/SrcFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/test/src/log.cpp",
+  "file": "/Users/xym/work/sense/c++/test/src/log.cpp"
 }
 ]

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xym/work/sense/c++/src
+# Install script for directory: /Users/xym/work/sense/c++/test/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

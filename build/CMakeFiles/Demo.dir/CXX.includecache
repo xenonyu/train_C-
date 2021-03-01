@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/xym/work/sense/c++/main.cpp
+/Users/xym/work/sense/c++/test/main.cpp
 iostream
 -
 vector
@@ -14,13 +14,13 @@ vector
 string
 -
 src/log.h
-/Users/xym/work/sense/c++/src/log.h
-src/add.cpp
-/Users/xym/work/sense/c++/src/add.cpp
+/Users/xym/work/sense/c++/test/src/log.h
+src/add.h
+/Users/xym/work/sense/c++/test/src/add.h
 
-/Users/xym/work/sense/c++/src/add.cpp
+/Users/xym/work/sense/c++/test/src/add.h
 iostream
 -
 
-/Users/xym/work/sense/c++/src/log.h
+/Users/xym/work/sense/c++/test/src/log.h
 

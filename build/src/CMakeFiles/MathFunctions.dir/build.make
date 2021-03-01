@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++
+CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/build
+CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/test/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/MathFunctions.dir/depend.make
@@ -78,29 +78,29 @@ include src/CMakeFiles/MathFunctions.dir/flags.make
 
 src/CMakeFiles/MathFunctions.dir/add.cpp.o: src/CMakeFiles/MathFunctions.dir/flags.make
 src/CMakeFiles/MathFunctions.dir/add.cpp.o: ../src/add.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MathFunctions.dir/add.cpp.o"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MathFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/src/add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MathFunctions.dir/add.cpp.o"
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MathFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/test/src/add.cpp
 
 src/CMakeFiles/MathFunctions.dir/add.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MathFunctions.dir/add.cpp.i"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/src/add.cpp > CMakeFiles/MathFunctions.dir/add.cpp.i
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/test/src/add.cpp > CMakeFiles/MathFunctions.dir/add.cpp.i
 
 src/CMakeFiles/MathFunctions.dir/add.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MathFunctions.dir/add.cpp.s"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/src/add.cpp -o CMakeFiles/MathFunctions.dir/add.cpp.s
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/test/src/add.cpp -o CMakeFiles/MathFunctions.dir/add.cpp.s
 
 src/CMakeFiles/MathFunctions.dir/log.cpp.o: src/CMakeFiles/MathFunctions.dir/flags.make
 src/CMakeFiles/MathFunctions.dir/log.cpp.o: ../src/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/MathFunctions.dir/log.cpp.o"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MathFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/src/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/MathFunctions.dir/log.cpp.o"
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MathFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/test/src/log.cpp
 
 src/CMakeFiles/MathFunctions.dir/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MathFunctions.dir/log.cpp.i"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/src/log.cpp > CMakeFiles/MathFunctions.dir/log.cpp.i
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/test/src/log.cpp > CMakeFiles/MathFunctions.dir/log.cpp.i
 
 src/CMakeFiles/MathFunctions.dir/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MathFunctions.dir/log.cpp.s"
-	cd /Users/xym/work/sense/c++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/src/log.cpp -o CMakeFiles/MathFunctions.dir/log.cpp.s
+	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/test/src/log.cpp -o CMakeFiles/MathFunctions.dir/log.cpp.s
 
 # Object files for target MathFunctions
 MathFunctions_OBJECTS = \
@@ -114,9 +114,9 @@ src/libMathFunctions.a: src/CMakeFiles/MathFunctions.dir/add.cpp.o
 src/libMathFunctions.a: src/CMakeFiles/MathFunctions.dir/log.cpp.o
 src/libMathFunctions.a: src/CMakeFiles/MathFunctions.dir/build.make
 src/libMathFunctions.a: src/CMakeFiles/MathFunctions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xym/work/sense/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libMathFunctions.a"
-	cd /Users/xym/work/sense/c++/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean_target.cmake
-	cd /Users/xym/work/sense/c++/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MathFunctions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libMathFunctions.a"
+	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean_target.cmake
+	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MathFunctions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/MathFunctions.dir/build: src/libMathFunctions.a
@@ -124,10 +124,10 @@ src/CMakeFiles/MathFunctions.dir/build: src/libMathFunctions.a
 .PHONY : src/CMakeFiles/MathFunctions.dir/build
 
 src/CMakeFiles/MathFunctions.dir/clean:
-	cd /Users/xym/work/sense/c++/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean.cmake
+	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -P CMakeFiles/MathFunctions.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/MathFunctions.dir/clean
 
 src/CMakeFiles/MathFunctions.dir/depend:
-	cd /Users/xym/work/sense/c++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xym/work/sense/c++ /Users/xym/work/sense/c++/src /Users/xym/work/sense/c++/build /Users/xym/work/sense/c++/build/src /Users/xym/work/sense/c++/build/src/CMakeFiles/MathFunctions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xym/work/sense/c++/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xym/work/sense/c++/test /Users/xym/work/sense/c++/test/src /Users/xym/work/sense/c++/test/build /Users/xym/work/sense/c++/test/build/src /Users/xym/work/sense/c++/test/build/src/CMakeFiles/MathFunctions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/MathFunctions.dir/depend
 

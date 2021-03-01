@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -g -Wall -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
+CXX_FLAGS =  -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
 

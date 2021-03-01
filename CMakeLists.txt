@@ -10,8 +10,10 @@ add_subdirectory(src)
 # 指定生成目标
 add_executable(Demo main.cpp)
 # 添加链接库
-target_link_libraries(Demo MathFunctions)
+target_link_libraries(Demo SrcFunctions)
 
-# 添加编译参数
-SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -O2")
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -O2")
+# # 添加编译参数
+# SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -O2")
+# SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -O2")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")

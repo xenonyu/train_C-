@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/Users/xym/work/sense/c++/test/src/add.cpp
+
 /Users/xym/work/sense/c++/test/src/log.cpp
 iostream
 -

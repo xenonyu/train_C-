@@ -1,1 +1,1 @@
-/usr/bin/clang++  -g -Wall -O2 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Demo.dir/main.cpp.o -o Demo  src/libMathFunctions.a 
+/usr/bin/clang++  -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Demo.dir/main.cpp.o -o Demo  src/libSrcFunctions.a 

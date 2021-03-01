@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++
+CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/build
+CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/build/CMakeFiles /Users/xym/work/sense/c++/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/test/build/CMakeFiles /Users/xym/work/sense/c++/test/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,17 +143,17 @@ Demo/fast:
 .PHONY : Demo/fast
 
 #=============================================================================
-# Target rules for targets named MathFunctions
+# Target rules for targets named SrcFunctions
 
 # Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions
-.PHONY : MathFunctions
+SrcFunctions: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SrcFunctions
+.PHONY : SrcFunctions
 
 # fast build rule for target.
-MathFunctions/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
+SrcFunctions/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/build
+.PHONY : SrcFunctions/fast
 
 main.o: main.cpp.o
 
@@ -191,7 +191,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Demo"
-	@echo "... MathFunctions"
+	@echo "... SrcFunctions"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
