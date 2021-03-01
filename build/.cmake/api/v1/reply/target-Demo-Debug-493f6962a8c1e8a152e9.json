@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk"
+					"fragment" : " -std=c++17 -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk"
 				}
 			],
 			"language" : "CXX",
@@ -65,7 +65,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g -g",
+				"fragment" : "-std=c++17 -g -g",
 				"role" : "flags"
 			},
 			{

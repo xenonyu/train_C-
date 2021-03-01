@@ -2,23 +2,35 @@
 class Log
 {
 public:
-    const static int LogLevelError = 0;
-    const static int LogLevelWarning = 1;
-    const static int LogLevelInfo = 2;
-    static int m_LogLevel;
+    enum Level
+    {
+        LogLevelError = 0,
+        LogLevelWarning = 1,
+        LogLevelInfo = 2
+    };
+    static Level m_LogLevel;
+
 public:
-    static void Warn(const char* message){
-        if (m_LogLevel >= LogLevelWarning)
-            std::cout << "[WARNING]: " << message << std::endl;
+    Log() = delete;
+    static void setLevel(Level level)
+    {
+        m_LogLevel = level;
     }
-
-    static void Error(const char* message){
+    static void Error(const char *message)
+    {
         if (m_LogLevel >= LogLevelError)
-            std::cout << "[ERROR]: " << message << std::endl;
+            std::cout << "\n[ERROR]: " << message << std::endl;
     }
 
-    static void Info(const char* message){
+    static void Warn(const char *message)
+    {
+        if (m_LogLevel >= LogLevelWarning)
+            std::cout << "\n[WARNING]: " << message << std::endl;
+    }
+
+    static void Info(const char *message)
+    {
         if (m_LogLevel >= LogLevelInfo)
-            std::cout << "[INFO]: " << message << std::endl;
+            std::cout << "\n[INFO]: " << message << std::endl;
     }
 };

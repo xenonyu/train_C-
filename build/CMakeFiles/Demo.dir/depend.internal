@@ -3,5 +3,8 @@
 
 CMakeFiles/Demo.dir/main.cpp.o
  /Users/xym/work/sense/c++/test/main.cpp
+ /Users/xym/work/sense/c++/test/src/Entity.h
+ /Users/xym/work/sense/c++/test/src/Player.h
+ /Users/xym/work/sense/c++/test/src/Singleton.h
  /Users/xym/work/sense/c++/test/src/add.h
  /Users/xym/work/sense/c++/test/src/log.h
