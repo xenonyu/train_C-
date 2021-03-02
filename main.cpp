@@ -21,6 +21,15 @@ void PrintName(const Entity* entity)
     std::cout << entity->GetClassName() << std::endl;
 }
 
+class tempEntity
+{
+private:
+    std::string m_Name;
+public:
+    tempEntity(std::string name) : m_Name(name){};
+    std::string GetName(){return m_Name;}
+
+};
 /**
  * 初始化类静态成员变量,必须在类外面初始化
  */
@@ -74,11 +83,17 @@ Line3)";
     Log::Info("测试class");
     Singleton::Get().Hello();
     Player* p = new Player("xym");
-    Entity* e = new Entity();
-    Entity* entity = p;
-    PrintName(entity);
-    PrintName(e);
-
+    // Entity* e;
+    // Entity* entity = p;
+    // PrintName(entity);
+    // PrintName(e);
+    tempEntity* e;
+    {
+        tempEntity* entity = new tempEntity("xym");
+        e = entity;
+    }
+    std::cout << e->GetName() << std::endl;
+    delete e;
     Log::Info("测试引用");
     int a = 5;
     int &ref = a;

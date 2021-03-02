@@ -7,11 +7,7 @@ public:
     float X, Y;
     mutable float m_DebugCount = 0;
 
-    Entity()
-    {
-        X = 0;
-        Y = 0;
-    }
+    Entity() : X(0),Y(0) {}
     Entity(float x, float y)
     {
         X = x;

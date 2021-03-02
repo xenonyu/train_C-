@@ -130,19 +130,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MathFunctions.dir/rule:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MathFunctions.dir/rule
-.PHONY : src/CMakeFiles/MathFunctions.dir/rule
+src/CMakeFiles/SrcFunctions.dir/rule:
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/SrcFunctions.dir/rule
+.PHONY : src/CMakeFiles/SrcFunctions.dir/rule
 
 # Convenience name for target.
-MathFunctions: src/CMakeFiles/MathFunctions.dir/rule
+SrcFunctions: src/CMakeFiles/SrcFunctions.dir/rule
 
-.PHONY : MathFunctions
+.PHONY : SrcFunctions
 
 # fast build rule for target.
-MathFunctions/fast:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
+SrcFunctions/fast:
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/build
+.PHONY : SrcFunctions/fast
 
 add.o: add.cpp.o
 
@@ -150,7 +150,7 @@ add.o: add.cpp.o
 
 # target to build an object file
 add.cpp.o:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/add.cpp.o
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.o
 .PHONY : add.cpp.o
 
 add.i: add.cpp.i
@@ -159,7 +159,7 @@ add.i: add.cpp.i
 
 # target to preprocess a source file
 add.cpp.i:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/add.cpp.i
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.i
 .PHONY : add.cpp.i
 
 add.s: add.cpp.s
@@ -168,7 +168,7 @@ add.s: add.cpp.s
 
 # target to generate assembly for a file
 add.cpp.s:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/add.cpp.s
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.s
 .PHONY : add.cpp.s
 
 log.o: log.cpp.o
@@ -177,7 +177,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/log.cpp.o
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -186,7 +186,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/log.cpp.i
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -195,7 +195,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MathFunctions.dir/build.make src/CMakeFiles/MathFunctions.dir/log.cpp.s
+	cd /Users/xym/work/sense/c++/test && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 # Help Target
@@ -206,7 +206,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MathFunctions"
+	@echo "... SrcFunctions"
 	@echo "... add.o"
 	@echo "... add.i"
 	@echo "... add.s"
