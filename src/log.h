@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <string>
 class Log
 {
 public:
@@ -11,12 +13,13 @@ public:
     static Level m_LogLevel;
 
 public:
-    Log() = delete;
+    // Log() = delete;
     static void setLevel(Level level)
     {
         m_LogLevel = level;
     }
-    static void Error(const char *message)
+    template<typename T>
+    static void Error(T message)
     {
         if (m_LogLevel >= LogLevelError)
             std::cout << "\n[ERROR]: " << message << std::endl;
@@ -27,8 +30,8 @@ public:
         if (m_LogLevel >= LogLevelWarning)
             std::cout << "\n[WARNING]: " << message << std::endl;
     }
-
-    static void Info(const char *message)
+    template<typename T>
+    static void Info(T message)
     {
         if (m_LogLevel >= LogLevelInfo)
             std::cout << "\n[INFO]: " << message << std::endl;

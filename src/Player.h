@@ -1,19 +1,17 @@
 #pragma once
 #include "Entity.h"
 #include "log.h"
-class Player : public Entity
+class Player : public Entity, public Log
 {
 public:
-    const char *Name;
+    std::string m_Name;
 
 public:
-    Player(float x, float y)
+    Player(const std::string name)
+        : m_Name(name)
     {
-        Log::Info("one player created.");
-        Entity(x, y);
+        Info("one player created.");
     }
-    void PrintName()
-    {
-        std::cout << "the name of player: " << Name << std::endl;
-    }
+    std::string GetName() override {return m_Name;}
+    std::string GetClassName() const override { return "Player";}
 };
