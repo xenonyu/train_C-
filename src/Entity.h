@@ -23,8 +23,11 @@ public:
     }
     float GetX() const{
         // you can't change the value of members with a const function like: X = 3;
-        m_DebugCount = 3;
+        // m_DebugCount = 3; //this work
         return X;
+    }
+    Entity operator+(Entity& b) const{
+        return Entity(X + b.X, Y + b.Y);
     }
     virtual std::string GetName() {return "Entity";}
     std::string GetClassName() const override {return "Entity";}

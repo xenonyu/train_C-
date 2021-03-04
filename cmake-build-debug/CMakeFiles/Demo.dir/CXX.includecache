@@ -9,11 +9,11 @@
 /Users/xym/work/sense/c++/test/main.cpp
 iostream
 -
+vector
+-
 array
 -
 string
--
-utility
 -
 src/log.h
 /Users/xym/work/sense/c++/test/src/log.h
