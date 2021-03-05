@@ -5,6 +5,7 @@ CMakeFiles/Demo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Demo.dir/main.cpp.o: ../src/Entity.h
 CMakeFiles/Demo.dir/main.cpp.o: ../src/Player.h
 CMakeFiles/Demo.dir/main.cpp.o: ../src/Printable.h
+CMakeFiles/Demo.dir/main.cpp.o: ../src/ScopedPtr.h
 CMakeFiles/Demo.dir/main.cpp.o: ../src/Singleton.h
 CMakeFiles/Demo.dir/main.cpp.o: ../src/add.h
 CMakeFiles/Demo.dir/main.cpp.o: ../src/log.h

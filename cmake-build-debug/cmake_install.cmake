@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xym/work/sense/c++/test
+# Install script for directory: /Users/xym/work/sense/c++/train_C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/xym/work/sense/c++/test/cmake-build-debug/src/cmake_install.cmake")
+  include("/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/xym/work/sense/c++/test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

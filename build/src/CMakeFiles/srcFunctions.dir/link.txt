@@ -1,2 +1,2 @@
-/usr/bin/ar qc libSrcFunctions.a CMakeFiles/SrcFunctions.dir/add.cpp.o CMakeFiles/SrcFunctions.dir/log.cpp.o
+/usr/bin/ar qc libSrcFunctions.a CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o CMakeFiles/SrcFunctions.dir/add.cpp.o CMakeFiles/SrcFunctions.dir/log.cpp.o
 /usr/bin/ranlib libSrcFunctions.a

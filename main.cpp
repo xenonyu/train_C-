@@ -7,6 +7,7 @@
 #include "src/Singleton.h"
 #include "src/Player.h"
 #include  "src/Entity.h"
+#include "src/ScopedPtr.h"
 #ifndef LOG
 #define LOG(x) std::cout << x << std::endl
 #endif
@@ -20,16 +21,28 @@ void PrintName(const Entity* entity)
 {
     std::cout << entity->GetClassName() << std::endl;
 }
-
-class tempEntity
-{
-private:
-    std::string m_Name;
+/**
+ * 测试this
+ */
+class Entity2;
+void PrintEntity2(Entity2* entity);
+class Entity2{
 public:
-    tempEntity(std::string name) : m_Name(name){};
-    std::string GetName(){return m_Name;}
-
+    int X, Y;
+    Entity2(int x, int y)
+        : X(x), Y(x)
+    {
+        PrintEntity2(this);
+    }
+    int GetX() const{
+        const Entity2* e = this;
+        return e->X;
+    }
 };
+void PrintEntity2(Entity2* entity){
+    std::cout << entity->X << entity->Y;
+}
+
 
 // 重载 <<
 std::ostream& operator<<(std::ostream& stream, const Entity& other){
@@ -47,13 +60,13 @@ int main()
 
     Log::setLevel(Log::LogLevelInfo);
 
-    Log::Info("test ternary operater");
+    Log::Info("train_C++ ternary operater");
     static int s_Level = 1;
     static int s_Speed = 2;
     s_Speed = s_Level > 5 ? 10 : 5;
     std::cout << "s_Speed: " << s_Speed << std::endl;
 
-    Log::Info("test const");
+    Log::Info("train_C++ const");
     const int MAX_AGE = 90;
    //下面两个指针的差别是const在*前还是在*后. 
     const int* ptr = new int; // or (int const* ptr). You can change what you pointer towards, but you can't change the value you point.
@@ -81,12 +94,12 @@ int main()
     bool contains = name.find('x') != std::string::npos;
     std::cout << "测试find: xym contains x? : " << contains << std::endl;
     //防止忽略/n
-    const char* ex = R"(
+    const char* expression = R"(
 测试'R'
 Line1
 Line2
 Line3)";
-    std::cout << ex << std::endl;
+    std::cout << expression << std::endl;
 
     Log::Info("测试class");
     Singleton::Get().Hello();
@@ -99,9 +112,13 @@ Line3)";
     LOG(a);
     Entity v1(1, 2);
     Entity v2(2, 3);
-    Log::Info("test overload operator + and *");
+    Log::Info("train_C++ overload operator + and *");
     Entity v3 = v1 + v2;
     std::cout << v3 << std::endl;
+    Log::Info("测试智能指针");
+    {
+        ScopedPtr e = new Entity();
+    }
 
     Log::Info("测试模板");
     int result = sum(2, 3);

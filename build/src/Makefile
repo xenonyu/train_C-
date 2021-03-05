@@ -67,10 +67,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/test
+CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/train_C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/test/build
+CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/train_C++/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/xym/work/sense/c++/test/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/test/build/CMakeFiles /Users/xym/work/sense/c++/test/build/src//CMakeFiles/progress.marks
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/test/build/CMakeFiles 0
+	cd /Users/xym/work/sense/c++/train_C++/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/train_C++/build/CMakeFiles /Users/xym/work/sense/c++/train_C++/build/src//CMakeFiles/progress.marks
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/xym/work/sense/c++/train_C++/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/xym/work/sense/c++/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/xym/work/sense/c++/train_C++/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/SrcFunctions.dir/rule:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/SrcFunctions.dir/rule
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/SrcFunctions.dir/rule
 .PHONY : src/CMakeFiles/SrcFunctions.dir/rule
 
 # Convenience name for target.
@@ -141,8 +141,35 @@ SrcFunctions: src/CMakeFiles/SrcFunctions.dir/rule
 
 # fast build rule for target.
 SrcFunctions/fast:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/build
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/build
 .PHONY : SrcFunctions/fast
+
+ScopedPtr.o: ScopedPtr.cpp.o
+
+.PHONY : ScopedPtr.o
+
+# target to build an object file
+ScopedPtr.cpp.o:
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o
+.PHONY : ScopedPtr.cpp.o
+
+ScopedPtr.i: ScopedPtr.cpp.i
+
+.PHONY : ScopedPtr.i
+
+# target to preprocess a source file
+ScopedPtr.cpp.i:
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.i
+.PHONY : ScopedPtr.cpp.i
+
+ScopedPtr.s: ScopedPtr.cpp.s
+
+.PHONY : ScopedPtr.s
+
+# target to generate assembly for a file
+ScopedPtr.cpp.s:
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s
+.PHONY : ScopedPtr.cpp.s
 
 add.o: add.cpp.o
 
@@ -150,7 +177,7 @@ add.o: add.cpp.o
 
 # target to build an object file
 add.cpp.o:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.o
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.o
 .PHONY : add.cpp.o
 
 add.i: add.cpp.i
@@ -159,7 +186,7 @@ add.i: add.cpp.i
 
 # target to preprocess a source file
 add.cpp.i:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.i
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.i
 .PHONY : add.cpp.i
 
 add.s: add.cpp.s
@@ -168,7 +195,7 @@ add.s: add.cpp.s
 
 # target to generate assembly for a file
 add.cpp.s:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.s
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.s
 .PHONY : add.cpp.s
 
 log.o: log.cpp.o
@@ -177,7 +204,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.o
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -186,7 +213,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.i
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -195,7 +222,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /Users/xym/work/sense/c++/test/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.s
+	cd /Users/xym/work/sense/c++/train_C++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 # Help Target
@@ -207,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SrcFunctions"
+	@echo "... ScopedPtr.o"
+	@echo "... ScopedPtr.i"
+	@echo "... ScopedPtr.s"
 	@echo "... add.o"
 	@echo "... add.i"
 	@echo "... add.s"
@@ -224,6 +254,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/xym/work/sense/c++/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/xym/work/sense/c++/train_C++/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
