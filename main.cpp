@@ -7,46 +7,15 @@
 #include "src/Singleton.h"
 #include "src/Player.h"
 #include  "src/Entity.h"
+#include "src/Entity2.h"
 #include "src/ScopedPtr.h"
+#include "src/String.h"
 #ifndef LOG
 #define LOG(x) std::cout << x << std::endl
 #endif
 
-void Increment(int &value)
-{
-    value++;
-}
-
-void PrintName(const Entity* entity)
-{
-    std::cout << entity->GetClassName() << std::endl;
-}
-/**
- * 测试this
- */
-class Entity2;
-void PrintEntity2(Entity2* entity);
-class Entity2{
-public:
-    int X, Y;
-    Entity2(int x, int y)
-        : X(x), Y(x)
-    {
-        PrintEntity2(this);
-    }
-    int GetX() const{
-        const Entity2* e = this;
-        return e->X;
-    }
-};
-void PrintEntity2(Entity2* entity){
-    std::cout << entity->X << entity->Y;
-}
-
-
-// 重载 <<
-std::ostream& operator<<(std::ostream& stream, const Entity& other){
-    return stream << other.X << ", " << other.Y;
+void PrintString(const String& s){
+    std::cout << s << std::endl;
 }
 
 /**
@@ -55,18 +24,30 @@ std::ostream& operator<<(std::ostream& stream, const Entity& other){
 Log::Level Log::m_LogLevel;
 int main()
 {
-    Entity* ptrEntity = new Entity[50];
-    delete[] ptrEntity; // if you delete array, use square brackets
+//    Entity* ptrEntity = new Entity[50];
+//    delete[] ptrEntity; // if you delete array, use square brackets
+    Log::Info("test unique pointer and shared pointer.");
+    {
+        std::shared_ptr<Entity> e1; //will add ref count
+        std::weak_ptr<Entity> e2;  // won't add ref count
+        {
+//            std::unique_ptr<Entity> entity = std::make_unique<Entity>(1, 2);
+//            entity->Print();
+            std::shared_ptr<Entity> e0 = std::make_shared<Entity>(1, 2);
+            e1 = e0;
+            e1->Print();
+        }
+    }
 
     Log::setLevel(Log::LogLevelInfo);
 
-    Log::Info("train_C++ ternary operater");
+    Log::Info("test ternary operater");
     static int s_Level = 1;
     static int s_Speed = 2;
     s_Speed = s_Level > 5 ? 10 : 5;
     std::cout << "s_Speed: " << s_Speed << std::endl;
 
-    Log::Info("train_C++ const");
+    Log::Info("test const");
     const int MAX_AGE = 90;
    //下面两个指针的差别是const在*前还是在*后. 
     const int* ptr = new int; // or (int const* ptr). You can change what you pointer towards, but you can't change the value you point.
@@ -100,6 +81,11 @@ Line1
 Line2
 Line3)";
     std::cout << expression << std::endl;
+    String wangzheng(String("Wang Zheng"));
+    String gaowang = wangzheng;
+    gaowang[2] = 'c';
+    PrintString(wangzheng);
+    PrintString(gaowang);
 
     Log::Info("测试class");
     Singleton::Get().Hello();
@@ -112,7 +98,7 @@ Line3)";
     LOG(a);
     Entity v1(1, 2);
     Entity v2(2, 3);
-    Log::Info("train_C++ overload operator + and *");
+    Log::Info("test overload operator + and *");
     Entity v3 = v1 + v2;
     std::cout << v3 << std::endl;
     Log::Info("测试智能指针");

@@ -17,7 +17,7 @@ public:
     ~Entity(){
         std::cout << "entity destroyed." << std::endl;
     }
-    void Move(int aX, int aY){
+    void Move(float aX, float aY){
         X += aX;
         Y += aY;
     }

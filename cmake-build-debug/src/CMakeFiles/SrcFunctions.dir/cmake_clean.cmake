@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o"
+  "CMakeFiles/SrcFunctions.dir/String.cpp.o"
   "CMakeFiles/SrcFunctions.dir/add.cpp.o"
   "CMakeFiles/SrcFunctions.dir/log.cpp.o"
   "libSrcFunctions.a"

@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/xym/work/sense/c++/test/src/add.cpp
+/Users/xym/work/sense/c++/train_C++/src/String.cpp
+String.h
+/Users/xym/work/sense/c++/train_C++/src/String.h
 
-/Users/xym/work/sense/c++/test/src/log.cpp
-iostream
+/Users/xym/work/sense/c++/train_C++/src/String.h
+ostream
 -
 
