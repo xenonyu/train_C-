@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/xym/work/sense/c++/test/src/add.cpp" "/Users/xym/work/sense/c++/test/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/add.cpp.o"
-  "/Users/xym/work/sense/c++/test/src/log.cpp" "/Users/xym/work/sense/c++/test/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
+  "/Users/xym/work/sense/c++/train_C++/src/add.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/add.cpp.o"
+  "/Users/xym/work/sense/c++/train_C++/src/log.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

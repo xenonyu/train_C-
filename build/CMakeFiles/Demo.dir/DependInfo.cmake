@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/xym/work/sense/c++/test/main.cpp" "/Users/xym/work/sense/c++/test/build/CMakeFiles/Demo.dir/main.cpp.o"
+  "/Users/xym/work/sense/c++/train_C++/main.cpp" "/Users/xym/work/sense/c++/train_C++/build/CMakeFiles/Demo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/xym/work/sense/c++/test/build/src/CMakeFiles/SrcFunctions.dir/DependInfo.cmake"
+  "/Users/xym/work/sense/c++/train_C++/build/src/CMakeFiles/SrcFunctions.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/xym/work/sense/c++/test/main.cpp
+/Users/xym/work/sense/c++/train_C++/main.cpp
 iostream
 -
 array
@@ -16,41 +16,41 @@ string
 utility
 -
 src/log.h
-/Users/xym/work/sense/c++/test/src/log.h
+/Users/xym/work/sense/c++/train_C++/src/log.h
 src/add.h
-/Users/xym/work/sense/c++/test/src/add.h
+/Users/xym/work/sense/c++/train_C++/src/add.h
 src/Singleton.h
-/Users/xym/work/sense/c++/test/src/Singleton.h
+/Users/xym/work/sense/c++/train_C++/src/Singleton.h
 src/Player.h
-/Users/xym/work/sense/c++/test/src/Player.h
+/Users/xym/work/sense/c++/train_C++/src/Player.h
 src/Entity.h
-/Users/xym/work/sense/c++/test/src/Entity.h
+/Users/xym/work/sense/c++/train_C++/src/Entity.h
 
-/Users/xym/work/sense/c++/test/src/Entity.h
+/Users/xym/work/sense/c++/train_C++/src/Entity.h
 iostream
 -
 Printable.h
-/Users/xym/work/sense/c++/test/src/Printable.h
+/Users/xym/work/sense/c++/train_C++/src/Printable.h
 
-/Users/xym/work/sense/c++/test/src/Player.h
+/Users/xym/work/sense/c++/train_C++/src/Player.h
 Entity.h
-/Users/xym/work/sense/c++/test/src/Entity.h
+/Users/xym/work/sense/c++/train_C++/src/Entity.h
 log.h
-/Users/xym/work/sense/c++/test/src/log.h
+/Users/xym/work/sense/c++/train_C++/src/log.h
 
-/Users/xym/work/sense/c++/test/src/Printable.h
+/Users/xym/work/sense/c++/train_C++/src/Printable.h
 iostream
 -
 
-/Users/xym/work/sense/c++/test/src/Singleton.h
+/Users/xym/work/sense/c++/train_C++/src/Singleton.h
 log.h
-/Users/xym/work/sense/c++/test/src/log.h
+/Users/xym/work/sense/c++/train_C++/src/log.h
 
-/Users/xym/work/sense/c++/test/src/add.h
+/Users/xym/work/sense/c++/train_C++/src/add.h
 iostream
 -
 
-/Users/xym/work/sense/c++/test/src/log.h
+/Users/xym/work/sense/c++/train_C++/src/log.h
 iostream
 -
 string

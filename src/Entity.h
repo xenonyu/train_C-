@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Printable.h"
+
 class Entity : public Printable
 {
 public:
@@ -9,9 +10,12 @@ public:
 
     Entity() : X(0),Y(0) {}
     Entity(float x, float y)
+        :X(x), Y(y)
     {
-        X = x;
-        Y = y;
+        std::cout << "entity created." << std::endl;
+    }
+    ~Entity(){
+        std::cout << "entity destroyed." << std::endl;
     }
     void Move(int aX, int aY){
         X += aX;
@@ -32,3 +36,4 @@ public:
     virtual std::string GetName() {return "Entity";}
     std::string GetClassName() const override {return "Entity";}
 };
+

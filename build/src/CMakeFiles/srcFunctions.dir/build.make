@@ -62,10 +62,10 @@ RM = /usr/local/Cellar/cmake/3.19.6/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/test
+CMAKE_SOURCE_DIR = /Users/xym/work/sense/c++/train_C++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/test/build
+CMAKE_BINARY_DIR = /Users/xym/work/sense/c++/train_C++/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/SrcFunctions.dir/depend.make
@@ -78,29 +78,29 @@ include src/CMakeFiles/SrcFunctions.dir/flags.make
 
 src/CMakeFiles/SrcFunctions.dir/add.cpp.o: src/CMakeFiles/SrcFunctions.dir/flags.make
 src/CMakeFiles/SrcFunctions.dir/add.cpp.o: ../src/add.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SrcFunctions.dir/add.cpp.o"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/test/src/add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/train_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/SrcFunctions.dir/add.cpp.o"
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/add.cpp.o -c /Users/xym/work/sense/c++/train_C++/src/add.cpp
 
 src/CMakeFiles/SrcFunctions.dir/add.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SrcFunctions.dir/add.cpp.i"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/test/src/add.cpp > CMakeFiles/SrcFunctions.dir/add.cpp.i
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/train_C++/src/add.cpp > CMakeFiles/SrcFunctions.dir/add.cpp.i
 
 src/CMakeFiles/SrcFunctions.dir/add.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcFunctions.dir/add.cpp.s"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/test/src/add.cpp -o CMakeFiles/SrcFunctions.dir/add.cpp.s
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/train_C++/src/add.cpp -o CMakeFiles/SrcFunctions.dir/add.cpp.s
 
 src/CMakeFiles/SrcFunctions.dir/log.cpp.o: src/CMakeFiles/SrcFunctions.dir/flags.make
 src/CMakeFiles/SrcFunctions.dir/log.cpp.o: ../src/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/test/src/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/c++/train_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/log.cpp.o -c /Users/xym/work/sense/c++/train_C++/src/log.cpp
 
 src/CMakeFiles/SrcFunctions.dir/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SrcFunctions.dir/log.cpp.i"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/test/src/log.cpp > CMakeFiles/SrcFunctions.dir/log.cpp.i
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/c++/train_C++/src/log.cpp > CMakeFiles/SrcFunctions.dir/log.cpp.i
 
 src/CMakeFiles/SrcFunctions.dir/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcFunctions.dir/log.cpp.s"
-	cd /Users/xym/work/sense/c++/test/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/test/src/log.cpp -o CMakeFiles/SrcFunctions.dir/log.cpp.s
+	cd /Users/xym/work/sense/c++/train_C++/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/c++/train_C++/src/log.cpp -o CMakeFiles/SrcFunctions.dir/log.cpp.s
 
 # Object files for target SrcFunctions
 SrcFunctions_OBJECTS = \
@@ -114,9 +114,9 @@ src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/add.cpp.o
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/log.cpp.o
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/build.make
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xym/work/sense/c++/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libSrcFunctions.a"
-	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SrcFunctions.dir/cmake_clean_target.cmake
-	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SrcFunctions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xym/work/sense/c++/train_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libSrcFunctions.a"
+	cd /Users/xym/work/sense/c++/train_C++/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SrcFunctions.dir/cmake_clean_target.cmake
+	cd /Users/xym/work/sense/c++/train_C++/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SrcFunctions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/SrcFunctions.dir/build: src/libSrcFunctions.a
@@ -124,10 +124,10 @@ src/CMakeFiles/SrcFunctions.dir/build: src/libSrcFunctions.a
 .PHONY : src/CMakeFiles/SrcFunctions.dir/build
 
 src/CMakeFiles/SrcFunctions.dir/clean:
-	cd /Users/xym/work/sense/c++/test/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SrcFunctions.dir/cmake_clean.cmake
+	cd /Users/xym/work/sense/c++/train_C++/build/src && $(CMAKE_COMMAND) -P CMakeFiles/SrcFunctions.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/SrcFunctions.dir/clean
 
 src/CMakeFiles/SrcFunctions.dir/depend:
-	cd /Users/xym/work/sense/c++/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xym/work/sense/c++/test /Users/xym/work/sense/c++/test/src /Users/xym/work/sense/c++/test/build /Users/xym/work/sense/c++/test/build/src /Users/xym/work/sense/c++/test/build/src/CMakeFiles/SrcFunctions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/xym/work/sense/c++/train_C++/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/xym/work/sense/c++/train_C++ /Users/xym/work/sense/c++/train_C++/src /Users/xym/work/sense/c++/train_C++/build /Users/xym/work/sense/c++/train_C++/build/src /Users/xym/work/sense/c++/train_C++/build/src/CMakeFiles/SrcFunctions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/SrcFunctions.dir/depend
 
