@@ -9,15 +9,19 @@
 class ScopedPtr
 {
 private:
-    Entity* m_Ptr;
+    Entity* m_Obj;
 public:
-    ScopedPtr(Entity* ptr)
-            : m_Ptr(ptr)
+    explicit ScopedPtr(Entity* ptr)
+            : m_Obj(ptr)
     {
     }
     ~ScopedPtr()
     {
-        delete m_Ptr;
+        delete m_Obj;
+    }
+
+    Entity* operator->() const{
+        return m_Obj;
     }
 };
 

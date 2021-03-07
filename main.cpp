@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 #include <string>
+#include <vector>
 #include <utility>
 #include "src/log.h"
 #include "src/add.h"
@@ -18,6 +19,24 @@ void PrintString(const String& s){
     std::cout << s << std::endl;
 }
 
+struct Vertex
+{
+    float x, y, z;
+    Vertex(float x, float y, float z)
+        : x(x), y(y), z(z) {
+
+    }
+    Vertex(const Vertex& vertex)
+        : x(vertex.x), y(vertex.y), z(vertex.z)
+    {
+        std::cout << "copied." << std::endl;
+    }
+};
+
+
+std::ostream& operator<<(std::ostream& stream, const Vertex& vector) {
+    return stream << vector.x << ", " << vector.y << ", " << vector.z;
+}
 /**
  * 初始化类静态成员变量,必须在类外面初始化
  */
@@ -26,6 +45,8 @@ int main()
 {
 //    Entity* ptrEntity = new Entity[50];
 //    delete[] ptrEntity; // if you delete array, use square brackets
+    Log::setLevel(Log::LogLevelInfo);
+
     Log::Info("test unique pointer and shared pointer.");
     {
         std::shared_ptr<Entity> e1; //will add ref count
@@ -38,8 +59,6 @@ int main()
             e1->Print();
         }
     }
-
-    Log::setLevel(Log::LogLevelInfo);
 
     Log::Info("test ternary operater");
     static int s_Level = 1;
@@ -66,6 +85,17 @@ int main()
     for(int & i : A){
         i = 2;
     }
+    Log::Info("测试vector");
+    std::vector<Vertex> vertices;
+    vertices.reserve(3);
+    vertices.emplace_back(1, 2, 3);
+    vertices.emplace_back(1, 2, 3);
+    vertices.emplace_back(7, 8, 9);
+    for(int i = 0; i < vertices.size(); i++)
+        std::cout <<vertices[i] << std::endl;
+    vertices.erase(vertices.begin() + 1);
+    for(const Vertex& v: vertices)
+        std::cout << v << std::endl;
     Log::Info("测试string.");
     //用于标识符s能够解析
     using namespace std::string_literals;
@@ -89,24 +119,31 @@ Line3)";
 
     Log::Info("测试class");
     Singleton::Get().Hello();
-    Player* p = new Player("xym");
+    {
+        Log::Info("test overload operator <<");
+        Entity v1(1, 2);
+        Entity v2(2, 3);
+        Log::Info("test overload operator + and *");
+        Entity v3 = v1 + v2;
+        std::cout << v3 << std::endl;
+    }
     Log::Info("测试引用");
     int a = 5;
     int &ref = a;
     Increment(a);
     LOG("the value of a is:");
     LOG(a);
-    Entity v1(1, 2);
-    Entity v2(2, 3);
-    Log::Info("test overload operator + and *");
-    Entity v3 = v1 + v2;
-    std::cout << v3 << std::endl;
     Log::Info("测试智能指针");
     {
-        ScopedPtr e = new Entity();
+        //这里重载了->让ScopedPtr能够直接使用Entity的函数
+        ScopedPtr e(new Entity());
+        e->GetClassName();
     }
 
     Log::Info("测试模板");
-    int result = sum(2, 3);
+    auto result = sum(2, 3);
     std::cout << "result = " << result << std::endl;
+    Log::Info("test struct.");
+    auto offset = (uintptr_t)&((Vertex*) nullptr)->y;
+    std::cout << offset << std::endl;
 }
