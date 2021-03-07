@@ -4,7 +4,7 @@
 #include <vector>
 #include <utility>
 #include "src/log.h"
-#include "src/add.h"
+#include "src/utility.h"
 #include "src/Singleton.h"
 #include "src/Player.h"
 #include  "src/Entity.h"
@@ -14,29 +14,6 @@
 #ifndef LOG
 #define LOG(x) std::cout << x << std::endl
 #endif
-
-void PrintString(const String& s){
-    std::cout << s << std::endl;
-}
-
-struct Vertex
-{
-    float x, y, z;
-    Vertex(float x, float y, float z)
-        : x(x), y(y), z(z) {
-
-    }
-    Vertex(const Vertex& vertex)
-        : x(vertex.x), y(vertex.y), z(vertex.z)
-    {
-        std::cout << "copied." << std::endl;
-    }
-};
-
-
-std::ostream& operator<<(std::ostream& stream, const Vertex& vector) {
-    return stream << vector.x << ", " << vector.y << ", " << vector.z;
-}
 /**
  * 初始化类静态成员变量,必须在类外面初始化
  */
@@ -49,8 +26,8 @@ int main()
 
     Log::Info("test unique pointer and shared pointer.");
     {
-        std::shared_ptr<Entity> e1; //will add ref count
-        std::weak_ptr<Entity> e2;  // won't add ref count
+        std::shared_ptr<Entity> e1; //will utility ref count
+        std::weak_ptr<Entity> e2;  // won't utility ref count
         {
 //            std::unique_ptr<Entity> entity = std::make_unique<Entity>(1, 2);
 //            entity->Print();
@@ -114,8 +91,8 @@ Line3)";
     String wangzheng(String("Wang Zheng"));
     String gaowang = wangzheng;
     gaowang[2] = 'c';
-    PrintString(wangzheng);
-    PrintString(gaowang);
+    wangzheng.Print();
+    gaowang.Print();
 
     Log::Info("测试class");
     Singleton::Get().Hello();
@@ -130,7 +107,7 @@ Line3)";
     Log::Info("测试引用");
     int a = 5;
     int &ref = a;
-    Increment(a);
+    utility::Increment(a);
     LOG("the value of a is:");
     LOG(a);
     Log::Info("测试智能指针");
@@ -141,7 +118,7 @@ Line3)";
     }
 
     Log::Info("测试模板");
-    auto result = sum(2, 3);
+    auto result = utility::sum(2, 3);
     std::cout << "result = " << result << std::endl;
     Log::Info("test struct.");
     auto offset = (uintptr_t)&((Vertex*) nullptr)->y;

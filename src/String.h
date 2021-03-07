@@ -5,7 +5,7 @@
 #ifndef TRAIN_C_STRING_H
 #define TRAIN_C_STRING_H
 
-#include <ostream>
+#include <iostream>
 
 class String {
 private:
@@ -27,6 +27,9 @@ public:
 
     ~String() {
         delete[] m_Buffer;
+    }
+    void Print(){
+        std::cout << m_Buffer << std::endl;
     }
 
     char &operator[](unsigned int index);

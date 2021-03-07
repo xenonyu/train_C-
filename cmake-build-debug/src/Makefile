@@ -198,33 +198,6 @@ String.cpp.s:
 	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/String.cpp.s
 .PHONY : String.cpp.s
 
-add.o: add.cpp.o
-
-.PHONY : add.o
-
-# target to build an object file
-add.cpp.o:
-	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.o
-.PHONY : add.cpp.o
-
-add.i: add.cpp.i
-
-.PHONY : add.i
-
-# target to preprocess a source file
-add.cpp.i:
-	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.i
-.PHONY : add.cpp.i
-
-add.s: add.cpp.s
-
-.PHONY : add.s
-
-# target to generate assembly for a file
-add.cpp.s:
-	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.s
-.PHONY : add.cpp.s
-
 log.o: log.cpp.o
 
 .PHONY : log.o
@@ -252,6 +225,33 @@ log.cpp.s:
 	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/log.cpp.s
 .PHONY : log.cpp.s
 
+utility.o: utility.cpp.o
+
+.PHONY : utility.o
+
+# target to build an object file
+utility.cpp.o:
+	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.o
+.PHONY : utility.cpp.o
+
+utility.i: utility.cpp.i
+
+.PHONY : utility.i
+
+# target to preprocess a source file
+utility.cpp.i:
+	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.i
+.PHONY : utility.cpp.i
+
+utility.s: utility.cpp.s
+
+.PHONY : utility.s
+
+# target to generate assembly for a file
+utility.cpp.s:
+	cd /Users/xym/work/sense/c++/train_C++/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.s
+.PHONY : utility.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,12 +267,12 @@ help:
 	@echo "... String.o"
 	@echo "... String.i"
 	@echo "... String.s"
-	@echo "... add.o"
-	@echo "... add.i"
-	@echo "... add.s"
 	@echo "... log.o"
 	@echo "... log.i"
 	@echo "... log.s"
+	@echo "... utility.o"
+	@echo "... utility.i"
+	@echo "... utility.s"
 .PHONY : help
 
 

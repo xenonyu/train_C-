@@ -171,32 +171,32 @@ ScopedPtr.cpp.s:
 	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s
 .PHONY : ScopedPtr.cpp.s
 
-add.o: add.cpp.o
+utility.o: utility.cpp.o
 
-.PHONY : add.o
+.PHONY : utility.o
 
 # target to build an object file
-add.cpp.o:
-	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.o
-.PHONY : add.cpp.o
+utility.cpp.o:
+	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.o
+.PHONY : utility.cpp.o
 
-add.i: add.cpp.i
+utility.i: utility.cpp.i
 
-.PHONY : add.i
+.PHONY : utility.i
 
 # target to preprocess a source file
-add.cpp.i:
-	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.i
-.PHONY : add.cpp.i
+utility.cpp.i:
+	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.i
+.PHONY : utility.cpp.i
 
-add.s: add.cpp.s
+utility.s: utility.cpp.s
 
-.PHONY : add.s
+.PHONY : utility.s
 
 # target to generate assembly for a file
-add.cpp.s:
-	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/add.cpp.s
-.PHONY : add.cpp.s
+utility.cpp.s:
+	cd /Users/xym/work/sense/c++/train_C++ && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/utility.cpp.s
+.PHONY : utility.cpp.s
 
 log.o: log.cpp.o
 
@@ -237,9 +237,9 @@ help:
 	@echo "... ScopedPtr.o"
 	@echo "... ScopedPtr.i"
 	@echo "... ScopedPtr.s"
-	@echo "... add.o"
-	@echo "... add.i"
-	@echo "... add.s"
+	@echo "... utility.o"
+	@echo "... utility.i"
+	@echo "... utility.s"
 	@echo "... log.o"
 	@echo "... log.i"
 	@echo "... log.s"
