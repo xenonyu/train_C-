@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/xym/work/sense/c++/train_C++/src
 
 CXX_FLAGS =  -std=c++17 -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
 

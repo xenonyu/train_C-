@@ -6,9 +6,9 @@ src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o
  /Users/xym/work/sense/c++/train_C++/src/Printable.h
  /Users/xym/work/sense/c++/train_C++/src/ScopedPtr.cpp
  /Users/xym/work/sense/c++/train_C++/src/ScopedPtr.h
-src/CMakeFiles/SrcFunctions.dir/String.cpp.o
- /Users/xym/work/sense/c++/train_C++/src/String.cpp
- /Users/xym/work/sense/c++/train_C++/src/String.h
+src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o
+ /Users/xym/work/sense/c++/train_C++/src/Strings.cpp
+ /Users/xym/work/sense/c++/train_C++/src/Strings.h
 src/CMakeFiles/SrcFunctions.dir/log.cpp.o
  /Users/xym/work/sense/c++/train_C++/src/log.cpp
 src/CMakeFiles/SrcFunctions.dir/utility.cpp.o

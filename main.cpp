@@ -3,14 +3,13 @@
 #include <string>
 #include <vector>
 #include <utility>
-#include "src/log.h"
-#include "src/utility.h"
-#include "src/Singleton.h"
-#include "src/Player.h"
-#include  "src/Entity.h"
-#include "src/Entity2.h"
-#include "src/ScopedPtr.h"
-#include "src/String.h"
+#include "log.h"
+#include "utility.h"
+#include "Singleton.h"
+#include  "Entity.h"
+#include "Entity2.h"
+#include "ScopedPtr.h"
+#include "Strings.h"
 #ifndef LOG
 #define LOG(x) std::cout << x << std::endl
 #endif
@@ -88,8 +87,8 @@ Line1
 Line2
 Line3)";
     std::cout << expression << std::endl;
-    String wangzheng(String("Wang Zheng"));
-    String gaowang = wangzheng;
+    Strings wangzheng(Strings("Wang Zheng"));
+    Strings gaowang = wangzheng;
     gaowang[2] = 'c';
     wangzheng.Print();
     gaowang.Print();
