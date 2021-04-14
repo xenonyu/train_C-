@@ -7,6 +7,7 @@ project (train_C++)
 aux_source_directory(. DIR_SRCS)
 # 添加 src 子目录
 add_subdirectory(src)
+include_directories(src)
 # 指定生成目标
 add_executable(Demo main.cpp)
 # 添加链接库
