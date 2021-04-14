@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/xym/work/sense/c++/train_C++/src/ScopedPtr.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o"
-  "/Users/xym/work/sense/c++/train_C++/src/String.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/String.cpp.o"
-  "/Users/xym/work/sense/c++/train_C++/src/log.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
-  "/Users/xym/work/sense/c++/train_C++/src/utility.cpp" "/Users/xym/work/sense/c++/train_C++/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/utility.cpp.o"
+  "/Users/xym/work/sense/code/c++/train_C-/src/ScopedPtr.cpp" "/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o"
+  "/Users/xym/work/sense/code/c++/train_C-/src/String.cpp" "/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/String.cpp.o"
+  "/Users/xym/work/sense/code/c++/train_C-/src/log.cpp" "/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/log.cpp.o"
+  "/Users/xym/work/sense/code/c++/train_C-/src/utility.cpp" "/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src/CMakeFiles/SrcFunctions.dir/utility.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
