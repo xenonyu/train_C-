@@ -90,18 +90,18 @@ src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s"
 	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/code/c++/train_C-/src/ScopedPtr.cpp -o CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s
 
-src/CMakeFiles/SrcFunctions.dir/String.cpp.o: src/CMakeFiles/SrcFunctions.dir/flags.make
-src/CMakeFiles/SrcFunctions.dir/String.cpp.o: ../src/String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SrcFunctions.dir/String.cpp.o"
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/String.cpp.o -c /Users/xym/work/sense/code/c++/train_C-/src/String.cpp
+src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o: src/CMakeFiles/SrcFunctions.dir/flags.make
+src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o: ../src/Strings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o"
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SrcFunctions.dir/Strings.cpp.o -c /Users/xym/work/sense/code/c++/train_C-/src/Strings.cpp
 
-src/CMakeFiles/SrcFunctions.dir/String.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SrcFunctions.dir/String.cpp.i"
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/code/c++/train_C-/src/String.cpp > CMakeFiles/SrcFunctions.dir/String.cpp.i
+src/CMakeFiles/SrcFunctions.dir/Strings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SrcFunctions.dir/Strings.cpp.i"
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xym/work/sense/code/c++/train_C-/src/Strings.cpp > CMakeFiles/SrcFunctions.dir/Strings.cpp.i
 
-src/CMakeFiles/SrcFunctions.dir/String.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcFunctions.dir/String.cpp.s"
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/code/c++/train_C-/src/String.cpp -o CMakeFiles/SrcFunctions.dir/String.cpp.s
+src/CMakeFiles/SrcFunctions.dir/Strings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SrcFunctions.dir/Strings.cpp.s"
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xym/work/sense/code/c++/train_C-/src/Strings.cpp -o CMakeFiles/SrcFunctions.dir/Strings.cpp.s
 
 src/CMakeFiles/SrcFunctions.dir/log.cpp.o: src/CMakeFiles/SrcFunctions.dir/flags.make
 src/CMakeFiles/SrcFunctions.dir/log.cpp.o: ../src/log.cpp
@@ -132,7 +132,7 @@ src/CMakeFiles/SrcFunctions.dir/utility.cpp.s: cmake_force
 # Object files for target SrcFunctions
 SrcFunctions_OBJECTS = \
 "CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o" \
-"CMakeFiles/SrcFunctions.dir/String.cpp.o" \
+"CMakeFiles/SrcFunctions.dir/Strings.cpp.o" \
 "CMakeFiles/SrcFunctions.dir/log.cpp.o" \
 "CMakeFiles/SrcFunctions.dir/utility.cpp.o"
 
@@ -140,7 +140,7 @@ SrcFunctions_OBJECTS = \
 SrcFunctions_EXTERNAL_OBJECTS =
 
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.o
-src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/String.cpp.o
+src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/log.cpp.o
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/utility.cpp.o
 src/libSrcFunctions.a: src/CMakeFiles/SrcFunctions.dir/build.make

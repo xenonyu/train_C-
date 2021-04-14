@@ -48,9 +48,7 @@ int main()
     const int* ptr = new int; // or (int const* ptr). You can change what you pointer towards, but you can't change the value you point.
     int* const ptr2 = new int; // You can change the value it point, but you can't change what you pointer towards.
     const int* const ptr3 = new int;
-    *ptr2 = 2;
-//    *ptr = 2;
-    std::cout << MAX_AGE << std::endl;
+
     Log::Info("测试bool类型.");
     //将bool类型的输出变为true, false
     std::cout << std::boolalpha;
@@ -61,6 +59,7 @@ int main()
     for(int & i : A){
         i = 2;
     }
+
     Log::Info("测试vector");
     std::vector<Vertex> vertices;
     vertices.reserve(3);
@@ -72,6 +71,7 @@ int main()
     vertices.erase(vertices.begin() + 1);
     for(const Vertex& v: vertices)
         std::cout << v << std::endl;
+
     Log::Info("测试string.");
     //用于标识符s能够解析
     using namespace std::string_literals;
@@ -103,13 +103,13 @@ Line3)";
         Entity v3 = v1 + v2;
         std::cout << v3 << std::endl;
     }
-    Log::Info("测试引用");
+
+    Log::Info("test reference");
     int a = 5;
     int &ref = a;
     utility::Increment(a);
-    LOG("the value of a is:");
-    LOG(a);
-    Log::Info("测试智能指针");
+
+    Log::Info("test self implemented smart pointer. ");
     {
         //这里重载了->让ScopedPtr能够直接使用Entity的函数
         ScopedPtr e(new Entity());
@@ -119,6 +119,7 @@ Line3)";
     Log::Info("测试模板");
     auto result = utility::sum(2, 3);
     std::cout << "result = " << result << std::endl;
+
     Log::Info("test struct.");
     auto offset = (uintptr_t)&((Vertex*) nullptr)->y;
     std::cout << offset << std::endl;

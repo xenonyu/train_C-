@@ -172,32 +172,32 @@ ScopedPtr.cpp.s:
 	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/ScopedPtr.cpp.s
 .PHONY : ScopedPtr.cpp.s
 
-String.o: String.cpp.o
+Strings.o: Strings.cpp.o
 
-.PHONY : String.o
+.PHONY : Strings.o
 
 # target to build an object file
-String.cpp.o:
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/String.cpp.o
-.PHONY : String.cpp.o
+Strings.cpp.o:
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/Strings.cpp.o
+.PHONY : Strings.cpp.o
 
-String.i: String.cpp.i
+Strings.i: Strings.cpp.i
 
-.PHONY : String.i
+.PHONY : Strings.i
 
 # target to preprocess a source file
-String.cpp.i:
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/String.cpp.i
-.PHONY : String.cpp.i
+Strings.cpp.i:
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/Strings.cpp.i
+.PHONY : Strings.cpp.i
 
-String.s: String.cpp.s
+Strings.s: Strings.cpp.s
 
-.PHONY : String.s
+.PHONY : Strings.s
 
 # target to generate assembly for a file
-String.cpp.s:
-	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/String.cpp.s
-.PHONY : String.cpp.s
+Strings.cpp.s:
+	cd /Users/xym/work/sense/code/c++/train_C-/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/SrcFunctions.dir/build.make src/CMakeFiles/SrcFunctions.dir/Strings.cpp.s
+.PHONY : Strings.cpp.s
 
 log.o: log.cpp.o
 
@@ -265,9 +265,9 @@ help:
 	@echo "... ScopedPtr.o"
 	@echo "... ScopedPtr.i"
 	@echo "... ScopedPtr.s"
-	@echo "... String.o"
-	@echo "... String.i"
-	@echo "... String.s"
+	@echo "... Strings.o"
+	@echo "... Strings.i"
+	@echo "... Strings.s"
 	@echo "... log.o"
 	@echo "... log.i"
 	@echo "... log.s"
