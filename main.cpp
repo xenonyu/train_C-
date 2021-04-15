@@ -71,7 +71,9 @@ int main()
     vertices.erase(vertices.begin() + 1);
     for(const Vertex& v: vertices)
         std::cout << v << std::endl;
-
+    std::vector<int> adc(3);
+    adc.push_back(1);
+    adc.push_back(2);
     Log::Info("测试string.");
     //用于标识符s能够解析
     using namespace std::string_literals;

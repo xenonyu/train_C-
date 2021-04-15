@@ -6,11 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/xym/work/sense/c++/train_C++/src/Strings.cpp
-Strings.h
-/Users/xym/work/sense/c++/train_C++/src/Strings.h
-
-/Users/xym/work/sense/c++/train_C++/src/Strings.h
+/Users/xym/work/sense/code/c++/train_C-/src/Entity.h
 iostream
 -
+Printable.h
+/Users/xym/work/sense/code/c++/train_C-/src/Printable.h
+
+/Users/xym/work/sense/code/c++/train_C-/src/Printable.h
+iostream
+-
+
+/Users/xym/work/sense/code/c++/train_C-/src/ScopedPtr.cpp
+ScopedPtr.h
+/Users/xym/work/sense/code/c++/train_C-/src/ScopedPtr.h
+
+/Users/xym/work/sense/code/c++/train_C-/src/ScopedPtr.h
+Entity.h
+/Users/xym/work/sense/code/c++/train_C-/src/Entity.h
+
+/Users/xym/work/sense/code/c++/train_C-/src/Strings.cpp
+Strings.h
+/Users/xym/work/sense/code/c++/train_C-/src/Strings.h
+
+/Users/xym/work/sense/code/c++/train_C-/src/Strings.h
+iostream
+-
+
+/Users/xym/work/sense/code/c++/train_C-/src/log.cpp
+iostream
+-
+
+/Users/xym/work/sense/code/c++/train_C-/src/utility.cpp
 
